@@ -1,11 +1,12 @@
 # Phase 1
-FROM newtmitch/sonar-scanner
-WORKDIR /usr/src
-COPY ./sonar-runner.properties /usr/lib/sonar-scanner/conf/sonar-scanner.properties
-COPY ./sonar-runner.properties ./
-COPY ./gradle ./api
+#FROM newtmitch/sonar-scanner
+#WORKDIR /usr/src
+#COPY ./sonar-runner.properties /usr/lib/sonar-scanner/conf/sonar-scanner.properties
+#COPY ./sonar-runner.properties ./
+#COPY ./gradle ./api
 #COPY ./src ./api
-RUN sonar-scanner  -Dsonar.projectBaseDir=/usr/src
+#EXPOSE 9000
+#RUN sonar-scanner  -Dsonar.projectBaseDir=/usr/src
 
 
 # Phase 2
